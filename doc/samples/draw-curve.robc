@@ -1,0 +1,10 @@
+use "graphics";
+
+a = 0;
+xbias = width() / 2;
+while (a < width()) {
+	x = a - xbias;
+	y = x*x/200;
+    plot(x + xbias,y);
+	a = a + 1;
+}

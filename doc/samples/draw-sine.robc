@@ -1,0 +1,20 @@
+use "graphics";
+use "math";
+
+// Draw a grid...
+yoffset = height() / 2;
+xoffset = width() / 2;
+color("0xff0000");
+line(0,yoffset,width()-1,yoffset);
+line(xoffset,0,xoffset,height()-1);
+
+// Draw the sine wave...
+color("0xffffff");
+for (x = 0; x < width(); x=x+1) {
+    y = sin(x/20)*yoffset + yoffset;
+    plot(x,y);
+}
+
+// Give it a title...
+color("0xffff00");
+string("Sine Wave", 5,15);

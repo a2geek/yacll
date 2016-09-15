@@ -1,0 +1,9 @@
+/**********************************************************
+ * This file contains a very basic method used for testing.
+ * If there are two or more use statements, there was a
+ * bug where one file is not loaded.
+ **********************************************************/
+
+function givemefive() {
+	return 5;
+}

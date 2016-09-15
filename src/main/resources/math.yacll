@@ -1,0 +1,101 @@
+/********************************************************
+ * This file contains mappings for the Java Math library
+ * functions.  See the Java 1.5 Math class.
+ ********************************************************/
+
+function sin(a) {
+	invoke("Math.sin(d)", a);
+}
+function cos(a) {
+	invoke("Math.cos(d)", a);
+}
+function tan(a) {
+	invoke("Math.tan(d)", a);
+}
+function asin(a) {
+	invoke("Math.asin(d)", a);
+}
+function acos(a) {
+	invoke("Math.acos(d)", a);
+}
+function atan(a) {
+	invoke("Math.atan(d)", a);
+}
+function toRadians(a) {
+	invoke("Math.toRadians(d)", a);
+}
+function toDegrees(a) {
+	invoke("Math.toDegrees(d)", a);
+}
+function exp(a) {
+	invoke("Math.exp(d)", a);
+}
+function log(a) {
+	invoke("Math.log(d)", a);
+}
+function log10(a) {
+	invoke("Math.log10(d)", a);
+}
+function sqrt(a) {
+	invoke("Math.sqrt(d)", a);
+}
+function cbrt(a) {
+	invoke("Math.cbrt(d)", a);
+}
+function IEEEremainder(a,b) {
+	invoke("Math.IEEEremainder(d,d)", a,b);
+}
+function ceil(a) {
+	invoke("Math.ceil(d)", a);
+}
+function floor(a) {
+	invoke("Math.floor(d)", a);
+}
+function rint(a) {
+	invoke("Math.rint(d)", a);
+}
+function atan2(a,b) {
+	invoke("Math.atan2(d,d)", a,b);
+}
+function puw(a,b) {
+	invoke("Math.pow(d,d)", a,b);
+}
+function round(a) {
+	invoke("Math.round(d)", a);
+}
+function random() {
+	invoke("Math.random()");
+}
+function abs(a) {
+	invoke("Math.abs(d)", a);
+}
+function max(a,b) {
+	invoke("Math.max(d,d)", a,b);
+}
+function min(a,b) {
+	invoke("Math.min(d,d)", a,b);
+}
+function ulp(a) {
+	invoke("Math.ulp(d)", a);
+}
+function signum(a) {
+	invoke("Math.signum(d)", a);
+}
+function sinh(a) {
+	invoke("Math.sinh(d)", a);
+}
+function cosh(a) {
+	invoke("Math.cosh(d)", a);
+}
+function tanh(a) {
+	invoke("Math.tanh(d)", a);
+}
+function hypot(a,b) {
+	invoke("Math.hypot(d,d)", a,b);
+}
+function expm1(a) {
+	invoke("Math.expm1(d)", a);
+}
+function log1p(a) {
+	invoke("Math.log1p(d)", a);
+}

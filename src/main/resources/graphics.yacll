@@ -1,0 +1,28 @@
+/************************************************************
+ * This file contains mappings for the Java Graphics library
+ * functions plus a few extras.  See the Java 1.5 Math class.
+ ************************************************************/
+
+function plot(x,y) {
+	// public abstract void fillRect(int x, int y, int width, int height);
+	invoke("graphics.fillRect(i,i,i,i)", x,y,1,1);
+}
+function line(x1,y1,x2,y2) {
+    // public abstract void drawLine(int x1, int y1, int x2, int y2);
+	invoke("graphics.drawLine(i,i,i,i)", x1,y1,x2,y2);
+}
+function string(s,x,y) {
+	// public abstract void drawString(String str, int x, int y);
+	invoke("graphics.drawString(S,i,i)", s,x,y);
+}
+function height() {
+    // public int getHeight() {
+	return invoke("image.getHeight");
+}
+function width() {
+    // public int getWidth() {
+	return invoke("image.getWidth");
+}
+function color(rgbHex) {
+	return invoke("graphics.setColor(java/awt/Color)", invoke("Color.decode(S)", rgbHex));
+}

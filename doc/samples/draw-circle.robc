@@ -1,0 +1,11 @@
+use "math";
+use "graphics";
+
+pi = 3.14159;
+a = 0;
+while (a < 2*pi) {
+    x = sin(a)*50 + width()/2;
+    y = cos(a)*50 + height()/2;
+    plot(x,y);
+    a = a + 0.01;
+}

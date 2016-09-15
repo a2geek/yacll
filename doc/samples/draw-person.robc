@@ -1,0 +1,34 @@
+use "graphics";
+use "math";
+
+pi = 3.14159;
+centerx = width()/2;
+centery = height()/2;
+facewidth = 50;
+faceheight = 60;
+headoffset = 10;
+eyeradius = 5;
+eyexoffset = 10;
+eyeyoffset = centery-10;
+mouthwidth = 30;
+mouthoffset = 10;
+
+a = 0;
+while (a < 2*pi) {
+    x = sin(a)*facewidth + centerx;
+    y = cos(a)*faceheight + centery;
+    plot(x,y);
+    x = sin(a)*eyeradius;
+    y = cos(a) * eyeradius;
+    plot((x+centerx)-eyexoffset, y+eyeyoffset);
+    plot((x+centerx)+eyexoffset, y+eyeyoffset);
+    a = a + 0.01;
+}
+
+a = 0;
+while (a < mouthwidth) {
+    x = centerx - mouthwidth + a;
+    y = centery + mouthoffset;
+    plot(x,y);
+    a = a + 1;
+}
